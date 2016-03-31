@@ -7,6 +7,17 @@
 	* Mac OS X (El Capitan)
 	* Ubuntu 15.10
 
+## Install
+* refer to lots of document in the internet
+* should not connect the internet during install
+* should not install 3rd party applications when install
+* known problem
+	* two fingers click doesn't work...
+	* right click is assigned as:
+		* two fingers tap
+		* three fingers click
+		* two fingers click on the right bottom area
+
 ## First of all
 * Update packages
 ```
