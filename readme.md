@@ -100,6 +100,17 @@ keyboard.send_keys("<shift>+<end>")
 keyboard.send_key("<delete>")
 ```
 
+## Network
+### Connect wifi at office/school
+* Security: WPA & WPA2 Enterprise
+* Authentication: Protected EAS (PEAP)
+* Anonymous identity: blank
+* CA certificate: None
+* check to No CA certificate is required
+* PEAP version: Automatic
+* Inner authentication: MSCHAPv2
+* Username: yours
+* Password: yours
 
 ## Appearance
 
@@ -138,14 +149,22 @@ fi
 ### Hide unnecessary bookmarks
 * subl .config/user-dirs.dirs &
 ```
+# XDG_DESKTOP_DIR="$HOME/Desktop"
+# XDG_DOWNLOAD_DIR="$HOME/Downloads"
+# XDG_TEMPLATES_DIR="$HOME/Templates"
+# XDG_PUBLICSHARE_DIR="$HOME/Public"
+# XDG_DOCUMENTS_DIR="$HOME/Documents"
+# XDG_MUSIC_DIR="$HOME/Music"
+# XDG_PICTURES_DIR="$HOME/Pictures"
+# XDG_VIDEOS_DIR="$HOME/Videos"
 XDG_DESKTOP_DIR="$HOME/Desktop"
 XDG_DOWNLOAD_DIR="$HOME/Downloads"
-#XDG_TEMPLATES_DIR="$HOME/Templates"
-#XDG_PUBLICSHARE_DIR="$HOME/Public"
-#XDG_DOCUMENTS_DIR="$HOME/Documents"
-#XDG_MUSIC_DIR="$HOME/Music"
-#XDG_PICTURES_DIR="$HOME/Pictures"
-#XDG_VIDEOS_DIR="$HOME/Videos"
+XDG_TEMPLATES_DIR="$HOME"
+XDG_PUBLICSHARE_DIR="$HOME"
+XDG_DOCUMENTS_DIR="$HOME"
+XDG_MUSIC_DIR="$HOME"
+XDG_PICTURES_DIR="$HOME"
+XDG_VIDEOS_DIR="$HOME"
 ```
 
 ### Add applications (sublime text) to "open with" applications
@@ -157,6 +176,21 @@ Exec=/opt/sublime_text/sublime_text %F
 to
 ```
 Exec=/opt/sublime_text/sublime_text %U
+```
+
+* subl .local/share/applications/sublime_text.desktop &
+```
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Sublime Text
+Icon=sublime_text.png
+Exec=/opt/sublime_text/sublime_text %F
+StartupNotify=false
+StartupWMClass=Sublime_text
+OnlyShowIn=Unity;
+X-UnityGenerated=true
 ```
 
 ## Others
@@ -230,12 +264,27 @@ sudo apt-get update
 %> sudo apt-get install php5
 ```
 
+## Pythoon
+* should not change the default python
+	* use "python3" command to run python3
+* install pip
+	* sudo apt-get -y install python-pip
+
 ## VirtualBox
 * To access USB
 	* install virtualbox extension pack
 	* enable USB controller (should use USB3 on VirtualBox 5)
 	* sudo adduser USERNAME vboxusers
 	*reboot
+
+## backup
+```
+sudo add-apt-repository ppa:nemh/systemback
+sudo apt-get update
+sudo apt-get install systemback
+```
+start from launcher  
+need external drive (ext4)
 
 
 # Cheat command
