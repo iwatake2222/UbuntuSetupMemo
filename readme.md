@@ -286,6 +286,12 @@ sudo apt-get install systemback
 start from launcher  
 need external drive (ext4)
 
+## UART Terminal
+GtkTerm
+
+## VNC Viewer
+* https://www.realvnc.com/download/vnc/
+* Debian-compatible installer contains both server and client
 
 # Cheat command
 
