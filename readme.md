@@ -205,6 +205,15 @@ X-UnityGenerated=true
 %> sudo apt-get install exfat-utils exfat-fuse
 ```
 
+### backup
+```
+sudo add-apt-repository ppa:nemh/systemback
+sudo apt-get update
+sudo apt-get install systemback
+```
+start from launcher  
+need external drive (ext4)
+
 
 ## tools
 ### Sublime text
@@ -248,7 +257,7 @@ sudo apt-get update
 
 ### astah
 
-## Meld
+### Meld
 * from software center
 * add this into .gitconfig
 ```
@@ -257,39 +266,35 @@ sudo apt-get update
 ```
 * %> git difftool -d
 
-## php
+### php
 ```
 %> sudo apt-add-repository ppa:ondrej/php5-5.6
 %> sudo apt-get update
 %> sudo apt-get install php5
 ```
 
-## Pythoon
+### Pythoon
 * should not change the default python
 	* use "python3" command to run python3
 * install pip
 	* sudo apt-get -y install python-pip
 
-## VirtualBox
+### VirtualBox
 * To access USB
 	* install virtualbox extension pack
 	* enable USB controller (should use USB3 on VirtualBox 5)
 	* sudo adduser USERNAME vboxusers
 	*reboot
 
-## backup
-```
-sudo add-apt-repository ppa:nemh/systemback
-sudo apt-get update
-sudo apt-get install systemback
-```
-start from launcher  
-need external drive (ext4)
 
-## UART Terminal
-GtkTerm
+### UART Terminal
+* Install
+	* GtkTerm
+	* gksu
+* sudo subl /usr/share/applications/gtkterm.desktop 
+	Exec=gksudo gtkterm
 
-## VNC Viewer
+### VNC Viewer
 * https://www.realvnc.com/download/vnc/
 * Debian-compatible installer contains both server and client
 
