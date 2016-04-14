@@ -227,7 +227,11 @@ need external drive (ext4)
 	* terminal
 	* trailingspaces
 	* xaml
-
+	* Ctags
+* Ctags
+	* sudo apt-get install ctags
+	* Create tags: right click on the folder name. or Ctrl-t Ctrl-r
+	* Jump to definition: Ctrl+Shift+click function name
 ### chrome
 
 ### acrobat
